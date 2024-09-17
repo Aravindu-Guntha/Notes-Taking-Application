@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right bottom,#b40eca,#ce7d03);
+}
+#main{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#addBtn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: azure;
+    background-color: #179712;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#addBtn:hover{
+    background-color: #06a086;
+}
+.note{
+    width: 300px;
+    background-color:#393e46;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow:0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+.note:hover{
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tool{
+    background-color: #222831;
+    color:white;
+    padding:5px;
+    position: fixed;
+    display:flex;
+    justify-content: flex-end;
+    width: 300px;
+    position: absolute; /* Make the tool div absolutely positioned */
+    top: 0; /* Position it at the top of the note container */
+    right: 0; /* Align it to the right */
+    width: 100%; /* Ensure it spans the full width of the note */
+}
+
+.tool button{
+    padding:5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tool button:hover{
+    color: #aca1a1;
+}
+
+.note textarea{
+    width: 300px;
+    margin-top: 38px;
+    border: none;
+    min-height: 220px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+}
+
+.note textarea:focus {
+    outline:none;
+}
